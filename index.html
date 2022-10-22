@@ -5,35 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>responsive slider</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .slider {
-        width: 100vw;
-        height: 100vh;
-      }
-      .slide {
-        display: none;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
       <div class="slider">
         <div class="slide">
-          <img src="hero-1.jpg" />
-          <img src="hero-2.jpg" />
-          <img src="hero-3.jpg" />"
+          <div class="content">
+            <h1>Title Slide</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              assumenda laborum cumque quam harum vitae?
+            </p>
+          </div>
+        </div>
+        <div class="slide current">
+          <div class="content">
+            <h1>Title Second Slide</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              assumenda laborum cumque quam harum vitae?
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Title Third Slide</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              assumenda laborum cumque quam harum vitae?
+            </p>
+          </div>
         </div>
       </div>
+      <div class="btn">
+        <button id="prev"><i class="fa fa-arrow-left"></i></button>
+        <button id="next"><i class="fa fa-arrow-right"></i></button>
+      </div>
     </header>
+    <script src="main.js"></script>
   </body>
 </html>
